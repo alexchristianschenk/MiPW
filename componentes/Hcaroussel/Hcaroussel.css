@@ -1,0 +1,8 @@
+.caroussel{
+    max-height: 40px;
+}
+@media(max-width: 768px){
+    .caroussel{
+        max-height: 70vh;
+    }
+  }

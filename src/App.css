@@ -1,28 +1,38 @@
-#root {
-  max-width: 1280px;
-  /* margin: 0 auto;
-  padding: 2rem;*/
-  text-align: center; 
-}
-
-#root {
-  display: block;
-  
+ #root {
+  max-width: 100%;
+  height: 20;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
   /* display: grid;
   grid-template-areas:
     "header header header"
-    "nav productos publicidad"
-    "nav servicios publicidad"
-    "footer footer footer";
-  grid-template-rows: 1fr 2fr 2fr 1fr; 
-  grid-template-columns: 1fr 3fr 1fr;
+    "productos productos productos"
+    "productos productos productos"
+    "productos productos productos"
+    "footer footer footer"; */
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+} 
+#root {
+  margin: 0 auto;
+  padding: 2rem;
+} 
+#root {
   background-color: rgb(207, 211, 219); 
-  height: 100vh;*/
-  row-gap: 10px;
+   
+   row-gap: 10px;
   column-gap: 1rem;
   text-align: center; 
   padding: 0.5rem; 
+
 }
+ 
 .border {
   border: 1px solid black;
 }
@@ -34,53 +44,31 @@ header {
  font-weight: 400;
  font-style: normal;
 }
-footer {
- background-color: rgb(255, 94, 0);
+footer{
   grid-area: footer;
 }
-section#productos {
- background-color: rgb(15, 129, 0);
-  grid-area: productos;     
-}
-.servicios {
- background-color: rgb(90, 101, 122);
- grid-area: servicios;    
- border: 1px solid black; 
-}
-.ListaCasas {
-  background-color: rgb(69, 237, 81);
-  
-  grid-area: nav;
-  border: 1px solid black;
-}
-.aside {
- background-color: rgb(0, 155, 160);
-  grid-area: publicidad;
-  
-}
-
 
 /*ejemplo GRID con media queries mobile first*/
 
 
 /*tablet*/
-@media(min-width: 768px){
+ @media(min-width: 456px){
   #root{
-    display: grid;
+    /* display: grid;
   grid-template-areas:
     "header header header"
     "nav productos publicidad"
     "nav servicios publicidad"
     "footer footer footer";
   grid-template-rows: 1fr 2fr 2fr 1fr; 
-  grid-template-columns: 1fr 3fr 1fr;
+  grid-template-columns: 1fr 3fr 1fr; */
   background-color: rgb(192, 197, 207); 
-  height: 100vh;
+  width: 100vh;
   row-gap: 10px;
   column-gap: 1rem;
   text-align: center; 
-    /* grid-template-rows: 1fr 3fr 3fr 1fr;
-    grid-template-columns: 20vh 4fr 1fr; */
+    grid-template-rows: 1fr 3fr 3fr 1fr;
+    grid-template-columns: 20vh 4fr 1fr;
   }
   header {
     background-color: rgb(202, 95, 95);
@@ -89,10 +77,11 @@ section#productos {
 }
 
 /*escritorio*/
-@media(min-width: 1024px){
+@media(min-width: 724px){
   #root{
     grid-template-rows: 1fr 4fr 4fr 2fr;
-    grid-template-columns: 20vh 4fr 1fr;;
+    grid-template-columns: 20vh 4fr 1fr;
+    width: 200vh;
   }
   header {
     background-color: rgb(154, 95, 202);
@@ -102,95 +91,4 @@ section#productos {
     display: block;
     border: 1px solid black;
   }
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* .logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-} */
-/* .logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-} */
-
-/* @keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
-} */
+} 

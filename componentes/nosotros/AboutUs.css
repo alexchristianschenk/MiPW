@@ -1,0 +1,24 @@
+
+.about-us {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  max-width: 100vh;
+}
+
+.about-us-header {
+  background-color: #f4f4f4;
+  padding: 10px;
+  text-align: center;
+  grid-area: header;
+}
+
+.about-us-content {
+  margin: 20px 0;
+  grid-area: publicidad;
+}
+
+.about-us-footer {
+  background-color: #f4f4f4;
+  padding: 10px;
+  text-align: center;
+}
