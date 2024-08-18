@@ -48,8 +48,16 @@ function Cartas() {
 
 
 
-  var ll=45;
-  const precioconavion=400;
+
+  // const precioconavion=1700;
+  const rio=1700;
+  const paris=1850;
+  const newyork=2500;
+
+  const barcelona=2850;
+  const tokyo=3400;
+  const sydney=3000;
+
   const handleClick = (className) => {
       setDisabled(true);
       setEnabled(false);
@@ -87,8 +95,17 @@ function Cartas() {
           Some quick example text to build on the card title and make up the
           bulk of the card's content.
         </Card.Text>
-        <input type="text" />"readOnly" "disabled"
-        <Button variant="primary">Go somewhere</Button>
+        <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1">
+          <Form.Label>Reseña de viaje ${count}</Form.Label>
+          <Form.Control as="textarea" rows={3} Label="lasas" disabled={desactivador} />
+        </Form.Group>
+        <button onClick={handleGameClick}>desactivador</button>
+        <button onClick={handleGameClic}>activador</button>
+        <Button variant="primary" onClick={(Botonsuma) => { 
+          setCount((count) => count+paris);
+          handleClick();}}>
+        valor {count} 
+        </Button>
       </Card.Body>
     </Card>
     <Card  className='cartas2' style={{ width: '100%' }}>
@@ -106,7 +123,7 @@ function Cartas() {
         <button onClick={handleGameClick}>desactivador</button>
         <button onClick={handleGameClic}>activador</button>
         <Button variant="primary" onClick={(Botonsuma) => { 
-          setCount((count) => count+precioconavion);
+          setCount((count) => count+rio);
           handleClick();}}>
         valor {count} 
         </Button>
@@ -127,7 +144,7 @@ function Cartas() {
         <button onClick={handleGameClick}>desactivador</button>
         <button onClick={handleGameClic}>activador</button>
         <Button variant="primary" onClick={(Botonsuma) => { 
-          setCount((count) => count+precioconavion);
+          setCount((count) => count+newyork);
           handleClick();}}>
         valor {count} 
         </Button>
@@ -148,7 +165,7 @@ function Cartas() {
         <button onClick={handleGameClick}>desactivador</button>
         <button onClick={handleGameClic}>activador</button>
         <Button variant="primary" onClick={(Botonsuma) => { 
-          setCount((count) => count+precioconavion);
+          setCount((count) => count+barcelona);
           handleClick();}}>
         valor {count} 
         </Button>
@@ -169,7 +186,7 @@ function Cartas() {
         <button onClick={handleGameClick}>desactivador</button>
         <button onClick={handleGameClic}>activador</button>
         <Button variant="primary" onClick={(Botonsuma) => { 
-          setCount((count) => count+precioconavion);
+          setCount((count) => count+tokyo);
           handleClick();}}>
         valor {count} 
         </Button>
@@ -190,7 +207,7 @@ function Cartas() {
         <button onClick={handleGameClick}>desactivador</button>
         <button onClick={handleGameClic}>activador</button>
         <Button variant="primary" onClick={(Botonsuma) => { 
-          setCount((count) => count+precioconavion);
+          setCount((count) => count+sydney);
           handleClick();}}>
         valor {count} 
         </Button>

@@ -3,6 +3,7 @@ import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
 import Form from 'react-bootstrap/Form';
 import FormGroupExample from './formulariotop'; 
+import './formulario.css'
 
 function Example() {
   const [show, setShow] = useState(false);
@@ -34,7 +35,7 @@ function Example() {
   const precioconavion=400;
   return (
     <>
-      <Button variant="primary" onClick={handleShow}>
+      <Button className="derecha" variant="primary" onClick={handleShow}>
         Launch demo modal
       </Button>
       <button disabled={enabled} onClick={() => {

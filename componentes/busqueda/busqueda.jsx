@@ -4,7 +4,6 @@ import Card from 'react-bootstrap/Card';
 import { Link } from 'react-router-dom';
 
 
-
 function ListaLugares() {
     const [id, setId] = useState('');
     const [data, setData] = useState(null);
@@ -89,7 +88,7 @@ function ListaLugares() {
 
             {data && data.length > 0 ? (
                 <div>
-                    <Card style={{ width: '30vh' }}>
+                    <Card className="carta" style={{ width: '67%' }}>
                         <Card.Body>
                             <Card.Title>{id}</Card.Title>
                             <Card.Text>

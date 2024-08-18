@@ -23,9 +23,6 @@ const AboutUs = () => {
         <p>¡Únete a nosotros y descubre un mundo de viajes que no solo te llevarán a lugares increíbles, sino que también contribuirán a un futuro más verde y justo!</p>
 
       </section>
-      <footer className="about-us-footer">
-        <p>Escribinos a </p>
-      </footer>
     </div>
     </>
   );
