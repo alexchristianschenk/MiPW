@@ -1,8 +1,9 @@
 import Form from 'react-bootstrap/Form';
+import './formulariotop.css';
 
 function FormGroupExample() {
   return (
-    <Form>
+    <Form className="forma">
       <Form.Group className="mb-3" controlId="formGroupEmail">
         <Form.Label>Email address</Form.Label>
         <Form.Control type="email" placeholder="Enter email" />
