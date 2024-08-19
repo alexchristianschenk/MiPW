@@ -1,5 +1,7 @@
 .caroussel{
-    max-height: 40px;
+    align-content: center;
+    text-align: center;
+    justify-content: center;
 }
 @media(max-width: 768px){
     .caroussel{

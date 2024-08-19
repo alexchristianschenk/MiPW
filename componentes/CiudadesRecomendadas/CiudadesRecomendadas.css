@@ -1,5 +1,4 @@
 .cartas{
-    background-color: darkblue;
     display: grid;
     grid-template-areas:
     "header header header"
@@ -14,19 +13,43 @@
     gap: 10px;
 }
 .mb-3{
-    background-color: chocolate;
+  background-color: chocolate;
+}
+.separar{
+  margin: 1%;
+}
+
+.cartas1{
+  background-color: rgb(144, 177, 241);
+  border-color: black;
+  border-width: 1px;
+}
+.cartas2{
+  background-color: rgb(144, 177, 241);
+  border-color: black;
+  border-width: 1px;
+}.cartas3{
+  background-color: rgb(144, 177, 241);
+  border-color: black;
+  border-width: 1px;
+}
+.cartas4{
+  background-color: rgb(144, 177, 241);
+  border-color: black;
+  border-width: 1px;
+}.cartas5{
+  background-color: rgb(144, 177, 241);
+  border-color: black;
+  border-width: 1px;
+}.cartas6{
+  background-color: rgb(144, 177, 241);
+  border-color: black;
+  border-width: 1px;
 }
   /*tablet*/
  @media(min-width: 658px){
     #root{
-      /* display: grid;
-    grid-template-areas:
-      "header header header"
-      "nav productos publicidad"
-      "nav servicios publicidad"
-      "footer footer footer";
-    grid-template-rows: 1fr 2fr 2fr 1fr; 
-    grid-template-columns: 1fr 3fr 1fr; */
+   
     background-color: rgb(192, 197, 207); 
     width: 200vh;
     row-gap: 10px;
@@ -37,9 +60,9 @@
         width: max;
         grid-template-rows: 1fr 1fr 1fr;
         grid-template-columns: 1fr 1fr;
+        border: 10px black;
     }
     header {
-      background-color: rgb(202, 95, 95);
       grid-area: header;
     }
   }
@@ -56,12 +79,11 @@
         grid-template-rows: 1fr 1fr;
         grid-template-columns: 1fr 1fr  1fr;
     }
-    .cartas1 {
+    /* .cartas1 {
       background-color: rgb(154, 95, 202); 
       border: 13px solid black;
-    }
+    } */
     header {
-        background-color: blue;
         grid-area: header;
       }
   } 

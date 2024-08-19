@@ -1,6 +1,4 @@
-/* formulario.css */
-
-/* Estilos Globales */
+/* Estilos generales */
 body {
     font-family: 'Arial', sans-serif;
     margin: 0;
@@ -8,7 +6,6 @@ body {
     box-sizing: border-box;
     background-color: #f8f9fa;
   }
-  
   .container {
     width: 90%;
     max-width: 1200px;
@@ -30,7 +27,7 @@ body {
     cursor: not-allowed;
   }
   
-  /* Estilos Base para los Botones */
+  /* Estilos básicos para los Botones */
   .boton {
     background-color: #007bff;
     color: white;
@@ -40,10 +37,16 @@ body {
     background-color: #0056b3;
     transform: scale(1.05);
   }
+
+  .boleto{
+    background-color: palevioletred !important;
+    color: white;
+  }
   
   .Botonsuma {
     background-color: #28a745;
     color: white;
+    margin-top: 2%;
   }
   
   .Botonsuma:hover {
@@ -82,6 +85,7 @@ body {
     }
     .derecha{
         margin-right: 1%;
+        margin-bottom: 2%;
     }
     .container {
       width: 95%;
@@ -102,7 +106,7 @@ body {
     .boton:hover {
       background-color: #c82333;
     }
-  
+    
     .Botonsuma {
       background-color: #17a2b8; 
       margin-left: 1%;
@@ -142,7 +146,7 @@ body {
     }
   
     .boton {
-      background-color: #007bff; 
+      background-color:blueviolet; 
     }
   
     .boton:hover {
@@ -171,10 +175,10 @@ body {
   @media (min-width: 941px) {
     body {
       background-color: #ffffff;
-    }
-.derecha{
+    } 
+    .derecha{
     margin-right: 1%;
-}
+    }
     .container {
       width: 85%;
       background-color: #f8f9fa;

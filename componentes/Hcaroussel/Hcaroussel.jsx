@@ -6,7 +6,7 @@ function Hcarousel() {
     <Carousel data-bs-theme="dark" className='caroussel'>
       <Carousel.Item>
         <img 
-          src="https://t4.ftcdn.net/jpg/02/96/15/35/360_F_296153501_B34baBHDkFXbl5RmzxpiOumF4LHGCvAE.jpg"
+          src="https://globalwfm.com/wp-content/uploads/2022/08/Should-You-Return-To-Office-Work-Pros-And-Cons.jpg"
           className="d-block w-100"
           alt="First slide"
         />
@@ -17,7 +17,7 @@ function Hcarousel() {
       <Carousel.Item>
         <img
           className="d-block w-100"
-          src="https://www.cronista.com/files/image/302/302492/5ffe1e5aec0ab.webp?oe=jpg"
+          src="https://img.freepik.com/premium-photo/young-businessman-working-computer-office_93675-142648.jpg"
           alt="Second slide"
         />
         <Carousel.Caption>
@@ -27,7 +27,7 @@ function Hcarousel() {
       <Carousel.Item>
         <img
           className="d-block w-100"
-          src="https://www.state.gov/wp-content/uploads/2022/01/shutterstock_248799484-scaled.jpg"
+          src="https://freerangestock.com/sample/120407/man-working-at-a-laptop-and-phone-in-an-open-office.jpg"
           alt="Third slide"
         />
         <Carousel.Caption>

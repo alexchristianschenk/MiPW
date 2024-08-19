@@ -1,7 +1,6 @@
 import { useState } from 'react';
 import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
-import Form from 'react-bootstrap/Form';
 import FormGroupExample from './formulariotop'; 
 import './formulario.css'
 
@@ -36,39 +35,35 @@ function Example() {
   return (
     <>
       <Button className="derecha" variant="primary" onClick={handleShow}>
-        Launch demo modal
+        Conocer el precio del dolar de hoy
       </Button>
       <button disabled={enabled} onClick={() => {
       setCount((count) => count-precioconavion);
       handleClic();
-      }} > Cancelar boleto de aviòn en el paquete {count}</button>
-    
-      {/* <Form>
-      <Form.Group className="mb-3" controlId="formGroupEmail">
-        <Form.Label>Email address</Form.Label>
-        <Form.Control type="email" placeholder="Enter email" />
-      </Form.Group>
-      <Form.Group className="mb-3" controlId="formGroupPassword">
-        <Form.Label>Password</Form.Label>
-        <Form.Control type="password" placeholder="Password" />
-      </Form.Group>
-      </Form> */}
+      }} className='boleto' > Cancelar boleto de avión en el paquete </button>
       <FormGroupExample />
-    <p>para enviar precio acordado (mìnimo de $200)+ extras</p>
-      <button className="boton" onClick={() => setCount((count) => count+0)}>
-          precio final=${(count)}
-      </button>
+      <p>para enviar precio acordado + extras</p>
       <Modal show={show} onHide={handleClose}>
         <Modal.Header closeButton>
-          <Modal.Title>Modal heading</Modal.Title>
+          <Modal.Title>VOYAGEVISTA</Modal.Title>
+          
         </Modal.Header>
-        <Modal.Body>Woohoo, you are reading this text in a modal!</Modal.Body>
+        <img
+              src="https://i.imgur.com/nDEU5bv.jpeg"
+              width="120"
+              height="60"
+              className="d-inline-block align-top"
+              alt="React Bootstrap logo"
+            />
+        <Modal.Body>
+        <Button className="separar" variant="primary" as="a" href={`https://dolarhoy.com/`} >Buscar cotizaciòn del dolar hoy</Button>
+        </Modal.Body>
         <Modal.Footer>
           <Button variant="secondary" onClick={handleClose}>
-            Close
+            Cerrar
           </Button>
           <Button variant="primary" onClick={handleClose}>
-            Save Changes
+            Guardar cambios
           </Button>
         </Modal.Footer>
         
@@ -78,7 +73,7 @@ function Example() {
       <button className="Botonsuma" disabled={disabled} onClick={(Botonsuma) => {
       setCount((count) => count+precioconavion);
       handleClick();
-      }} > sumar al viaje boleto de aviòn ($400)</button>
+      }} > sumar al viaje boleto de avión ($400)</button>
       
       <p>PRECIO FINAL:${count}</p>
       

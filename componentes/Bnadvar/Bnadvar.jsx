@@ -11,7 +11,15 @@ function Bnadvar() {
   return (
     <Navbar expand="lg" className="bg-body-tertiary">
       <Container fluid>
-        <Navbar.Brand href="#">Navbar scroll</Navbar.Brand>
+        <Navbar.Brand href="" className='nav1'>
+        <img
+              src="https://i.imgur.com/nDEU5bv.jpeg"
+              width="120"
+              height="60"
+              className="d-inline-block align-top"
+              alt="React Bootstrap logo"
+            />
+        </Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarScroll" />
         <Navbar.Collapse id="navbarScroll">
           <Nav
@@ -19,11 +27,10 @@ function Bnadvar() {
             style={{ maxHeight: '100px' }}
             navbarScroll
           >
-            <Nav.Link href="/Home">Home</Nav.Link>
-            <Nav.Link as={Link} to="/busqueda">Buscador de Lugares</Nav.Link>
-            <Nav.Link as={Link} to="/formulariol">Formulario</Nav.Link>
-            <Nav.Link as={Link} to="/AboutUs">Nosotros</Nav.Link>
-            <Nav.Link as={Link} to="/Cartas">Lugares Recomendados</Nav.Link>
+            <Nav.Link href="/Home" className='nav1'>Home</Nav.Link>
+            <Nav.Link as={Link} to="/formulariol" className='nav1'>Buscador de Lugares</Nav.Link>
+            <Nav.Link as={Link} to="/AboutUs" className='nav1'>Nosotros</Nav.Link>
+            <Nav.Link as={Link} to="/Cartas" className='nav1'>Lugares Recomendados</Nav.Link>
           </Nav>
           
         </Navbar.Collapse>
